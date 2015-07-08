@@ -16,6 +16,8 @@ class DreamsController < ApplicationController
 
   def update
     dream = Dream.find(params[:id])
+    puts "YEA"
+    puts params[:story]
     dream.story = "CHANGED"
     dream.save
   end
