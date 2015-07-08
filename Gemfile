@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.5'
 gem 'rails_12factor', group: :production
+gem 'rack-cors', :require => 'rack/cors'
 
 gem 'rails', '4.1.8'
 gem 'pg'
