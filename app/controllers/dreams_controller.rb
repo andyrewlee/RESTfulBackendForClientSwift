@@ -13,4 +13,10 @@ class DreamsController < ApplicationController
   def destroy
     Dream.find(params[:id]).destroy
   end
+
+  def update
+    dream = Dream.find(params[:id])
+    dream.story = params[:story]
+    dream.save
+  end
 end
