@@ -9,4 +9,8 @@ class DreamsController < ApplicationController
   def create
     Dream.create(story: params[:story])
   end
+
+  def destroy
+    Dream.find(params[:id]).destroy
+  end
 end
